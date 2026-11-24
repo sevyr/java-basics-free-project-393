@@ -5,7 +5,8 @@ public class PasswordGenerator {
     private static final String DIGITS = "0123456789";
     private static final String SPECIAL = "!@#$%^&*";
 
-    public static String generatePassword(int length, long seed, boolean useUppercase, boolean useDigits, boolean useSpecial) {
+    public static String generatePassword(
+            int length, long seed, boolean useUppercase, boolean useDigits, boolean useSpecial) {
         String alphabet = LOWERCASE;
 
         if (useUppercase) {
